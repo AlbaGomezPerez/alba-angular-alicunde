@@ -1,27 +1,29 @@
-# AlbaAngularAlicunde
+# AlbaAlicunde
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.10.
+This is an Angular application featuring two screens. The app consists of a login form on the first screen with validation and a success screen displaying a random GIF.
 
-## Development server
+## Features
+Login Form (First Screen):
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The login form contains two inputs: email and password.
+Both inputs are required.
+The password must be at least 6 characters long.
+The submit button is disabled until all input fields are correctly filled.
+Upon successful validation, the user is redirected to the success screen.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Success Screen (Second Screen):
 
-## Build
+Displays a random GIF.
+Includes a button that generates a new random GIF each time it is clicked.
+The random GIFs are selected from a predefined set of images, excluding the current one.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Technologies Used
+Angular: The main framework for building the application.
+Reactive Forms: Used for form control and validation.
+Angular Router: Handles routing between the login and success screens.
 
-## Running unit tests
+## Tests
+The project includes unit tests written in Jasmine and executed using Karma. These tests ensure that the application behaves as expected, including form validation, button behavior, and navigation.
+To run the unit tests, use the following command 'ng test'
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
